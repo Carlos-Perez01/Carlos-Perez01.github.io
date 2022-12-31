@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Estilos da aplicação -->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Galleria</title>
+</head>
+<body>
+    <h1 class="certificados">Certificados</h1>
+    <main>
+        <div class="cards">
+        </div>
+    </main>
+    <footer>
+        <p><span>Certificados</span> &copy; Carlos José Pérez Rodrigues, 2022</p>
+    </footer>
+    <script type="text/javascript" >
+
+        var nombres =[
+            "Bachillerato",
+            "Desarrollador de Frontend",
+            "Desarrollador de Backend",
+            "Desarrollador de JavaScript",
+            "Desarrollador Full Stack",
+            "PhP Developer",
+            "Otros"
+        ]
+
+        var cards = document.querySelector('.cards');
+
+        for (var i = 0; i < 7; i+=1) {
+            var divcontainer = document.createElement("div");
+            divcontainer.className = "cardContainer card" + i;
+
+            cards.appendChild(divcontainer);
+            
+        }
+
+
+    </script>
+</body>
+</html>
