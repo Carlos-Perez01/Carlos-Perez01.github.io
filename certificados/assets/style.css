@@ -218,6 +218,20 @@
     filter: grayscale(0%);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("fotoscertificados/Git.png");
   }
+
+  .card8 {
+    background-image: url("fotoscertificados/JSprofesional.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .card8:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("fotoscertificados/JSprofesional.png");
+  }
   
   footer {
     text-align: center;
