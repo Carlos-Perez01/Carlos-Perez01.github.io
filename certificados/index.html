@@ -28,14 +28,6 @@
 
         var cards = document.querySelector('.cards');
 
-        for (var i = 0; i < 10; i+=1) {
-            var divcontainer = document.createElement("div");
-            divcontainer.className = "cardContainer card" + i;
-
-            cards.appendChild(divcontainer);
-            
-        }
-
         $(function(){
 
             var listacertificados = [
@@ -46,12 +38,21 @@
                 "JSprincipiantes",
                 "JSprofesional",
                 "Php",
+                "ecs6",
                 "BashScript",
                 "Ciberseguridad",
                 "Docker"
             ];
 
-            for (var i = 0; i < 10; i+=1) {
+            for (var i = 0; i < listacertificados.length; i+=1) {
+            var divcontainer = document.createElement("div");
+            divcontainer.className = "cardContainer card" + i;
+
+            cards.appendChild(divcontainer);
+            
+            }
+
+            for (var i = 0; i < listacertificados.length; i++) {
                 $(".card" + i).css({'background-image':`url("assets/fotoscertificados/${listacertificados[i]}.png")`,
                 'background-size':'100%',
                 'background-position': 'center',
